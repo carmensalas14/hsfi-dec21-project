@@ -29,7 +29,22 @@ $("#past-button").click(function(){
     $('#past-content').show();
 });
 
-$("#takeover-content").click(function(){
-    $('all-content').hide();
-    $('takeover-content').show();
+$("#takeover-button").click(function(){
+    $('.all-content').hide();
+    $('#takeover-content').show();
+});
+
+$("#takeover-form-button").click(function(){
+    $("#site-title").append($("#takeover-input").val());
+});
+
+$("#darkness").click(function(){
+    $("all-content").hide();
+     $("#darkness").show();
+     $("body").css("background-color","black");
+     $("body").css("color","white");
+});
+
+$("#press").click(function(){
+    alert("I TOLD YOU NOT TO PRESS");
 });
